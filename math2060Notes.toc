@@ -23,11 +23,12 @@
 \contentsline {section}{\numberline {}16.4: Triple Integrals}{150}{section.23}%
 \contentsline {section}{\numberline {}16.5: Triple Integrals in Cylindrical and Spherical Coordinates}{155}{section.24}%
 \contentsline {section}{\numberline {}16.6: Integrals for Mass Calculations}{163}{section.25}%
-\contentsline {section}{\numberline {}17.1: Vector Fields}{169}{section.26}%
-\contentsline {section}{\numberline {}17.2: Line Integrals}{174}{section.27}%
-\contentsline {section}{\numberline {}17.3: Conservative Vector Fields}{186}{section.28}%
-\contentsline {section}{\numberline {}17.4: Green's Theorem}{196}{section.29}%
-\contentsline {section}{\numberline {}17.5: Divergence and Curl}{209}{section.30}%
-\contentsline {section}{\numberline {}17.6: Surface Integrals}{219}{section.31}%
-\contentsline {section}{\numberline {}17.7: Stokes' Theorem}{234}{section.32}%
-\contentsline {section}{\numberline {}17.8: Divergence Theorem}{243}{section.33}%
+\contentsline {section}{\numberline {}16.7: Change of Variables in Multiple Integrals}{169}{section.26}%
+\contentsline {section}{\numberline {}17.1: Vector Fields}{179}{section.27}%
+\contentsline {section}{\numberline {}17.2: Line Integrals}{184}{section.28}%
+\contentsline {section}{\numberline {}17.3: Conservative Vector Fields}{196}{section.29}%
+\contentsline {section}{\numberline {}17.4: Green's Theorem}{206}{section.30}%
+\contentsline {section}{\numberline {}17.5: Divergence and Curl}{219}{section.31}%
+\contentsline {section}{\numberline {}17.6: Surface Integrals}{229}{section.32}%
+\contentsline {section}{\numberline {}17.7: Stokes' Theorem}{244}{section.33}%
+\contentsline {section}{\numberline {}17.8: Divergence Theorem}{253}{section.34}%
