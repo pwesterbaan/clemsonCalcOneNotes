@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Clemson Calculus Notes
+This repository contains notes for Clemson University's calculus sequence using the textbook *Calculus: Early  Transcendentals* by Briggs, Cocran, Gillett, Schulz, 3rd Edition, Pearson, 2019.
 
-You can use the [editor on GitHub](https://github.com/pwesterbaan/clemsonCalculusNotes/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The main files are `math?0?0Notes.{pdf,tex}` which inherit their styling from `mathNotesPreamble.tex`. The `subfile` package is used to import each section's source file, contained in the `subfiles` directory, into the main `math?0?0Notes.tex` file.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* [math1040Notes.pdf](https://github.com/pwesterbaan/clemsonCalculusNotes/raw/master/math1040Notes.pdf)
+* [math1060Notes.pdf](https://github.com/pwesterbaan/clemsonCalculusNotes/raw/master/math1060Notes.pdf)
+* [math1070Notes.pdf](https://github.com/pwesterbaan/clemsonCalculusNotes/raw/master/math1070Notes.pdf)
+* [math1080Notes.pdf](https://github.com/pwesterbaan/clemsonCalculusNotes/raw/master/math1080Notes.pdf)
+* [math2060Notes.pdf](https://github.com/pwesterbaan/clemsonCalculusNotes/raw/master/math2060Notes.pdf)
 
-### Markdown
+The included preamble files contain packages and macros needed to compile:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* [texPreamble.sty](https://github.com/pwesterbaan/scripts/blob/master/texmf/tex/latex/local/texPreamble.sty)
+* [texShortcutsWesterbaan.tex](https://github.com/pwesterbaan/scripts/blob/master/texmf/tex/latex/local/texShortcutsWesterbaan.tex)
+* [colorPalette.sty](https://github.com/pwesterbaan/scripts/blob/master/texmf/tex/latex/local/colorPalette.sty)
 
-```markdown
-Syntax highlighted code block
+Note:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pwesterbaan/clemsonCalculusNotes/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* Compiling using the option ```--shell-escape``` takes advantage of the *Externalization Library* provided by Ti*k*Z which converts each image into a separate PDF (located in the ```\images``` folder).
+* A standard free Overleaf account times out before this project finishes compiling, but individual sections can be compiled by including the ```mathNotesPreamble.tex``` file in the same directory/folder.
