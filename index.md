@@ -1,5 +1,5 @@
 # Clemson Calculus Notes
-This repository contains notes for Clemson University's calculus sequence using the textbook *Calculus: Early  Transcendentals* by Briggs, Cocran, Gillett, Schulz, 3rd Edition, Pearson, 2019.
+[This repository](https://github.com/pwesterbaan/clemsonCalculusNotes) contains notes for Clemson University's calculus sequence using the textbook *Calculus: Early  Transcendentals* by Briggs, Cocran, Gillett, Schulz, 3rd Edition, Pearson, 2019.
 
 The main files are `math?0?0Notes.{pdf,tex}` which inherit their styling from `mathNotesPreamble.tex`. The `subfile` package is used to import each section's source file, contained in the `subfiles` directory, into the main `math?0?0Notes.tex` file.
 
