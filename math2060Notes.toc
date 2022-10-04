@@ -1,34 +1,34 @@
 \contentsline {section}{\numberline {}13.1: Vectors and the Geometry of Space}{1}{section.1}%
 \contentsline {section}{\numberline {}13.2: Vectors in Three Dimensions}{6}{section.2}%
 \contentsline {section}{\numberline {}13.3: Dot Products}{13}{section.3}%
-\contentsline {section}{\numberline {}13.4: Cross Products}{18}{section.4}%
-\contentsline {section}{\numberline {}13.5: Lines and Planes in Space}{24}{section.5}%
-\contentsline {section}{\numberline {}13.6: Cylinders and Quadric Surfaces}{31}{section.6}%
-\contentsline {section}{\numberline {}14.1: Vector-Valued Functions}{39}{section.7}%
-\contentsline {section}{\numberline {}14.2: Calculus of Vector-Valued Functions}{44}{section.8}%
-\contentsline {section}{\numberline {}14.3: Motion in Space}{49}{section.9}%
-\contentsline {section}{\numberline {}14.4: Length of Curves}{54}{section.10}%
-\contentsline {section}{\numberline {}14.5: Curvature and Normal Vectors:}{58}{section.11}%
-\contentsline {section}{\numberline {}15.1: Graphs and Level Curves}{72}{section.12}%
-\contentsline {section}{\numberline {}15.2: Limits and Continuity}{80}{section.13}%
-\contentsline {section}{\numberline {}15.3: Partial Derivatives}{86}{section.14}%
-\contentsline {section}{\numberline {}15.4: The Chain Rule}{92}{section.15}%
-\contentsline {section}{\numberline {}15.5: Directional Derivatives and the Gradient}{98}{section.16}%
-\contentsline {section}{\numberline {}15.6: Tangent Planes and Linear Approximation}{107}{section.17}%
-\contentsline {section}{\numberline {}15.7: Maximum/Minimum Problems}{113}{section.18}%
-\contentsline {section}{\numberline {}15.8: Lagrange Multipliers}{122}{section.19}%
-\contentsline {section}{\numberline {}16.1: Double Integrals over Rectangular Regions}{129}{section.20}%
-\contentsline {section}{\numberline {}16.2: Double Integrals over General Regions}{134}{section.21}%
-\contentsline {section}{\numberline {}16.3: Double Integrals in Polar Coordinates}{141}{section.22}%
-\contentsline {section}{\numberline {}16.4: Triple Integrals}{150}{section.23}%
-\contentsline {section}{\numberline {}16.5: Triple Integrals in Cylindrical and Spherical Coordinates}{155}{section.24}%
-\contentsline {section}{\numberline {}16.6: Integrals for Mass Calculations}{163}{section.25}%
-\contentsline {section}{\numberline {}16.7: Change of Variables in Multiple Integrals}{169}{section.26}%
-\contentsline {section}{\numberline {}17.1: Vector Fields}{179}{section.27}%
-\contentsline {section}{\numberline {}17.2: Line Integrals}{184}{section.28}%
-\contentsline {section}{\numberline {}17.3: Conservative Vector Fields}{196}{section.29}%
-\contentsline {section}{\numberline {}17.4: Green's Theorem}{206}{section.30}%
-\contentsline {section}{\numberline {}17.5: Divergence and Curl}{219}{section.31}%
-\contentsline {section}{\numberline {}17.6: Surface Integrals}{229}{section.32}%
-\contentsline {section}{\numberline {}17.7: Stokes' Theorem}{244}{section.33}%
-\contentsline {section}{\numberline {}17.8: Divergence Theorem}{253}{section.34}%
+\contentsline {section}{\numberline {}13.4: Cross Products}{20}{section.4}%
+\contentsline {section}{\numberline {}13.5: Lines and Planes in Space}{26}{section.5}%
+\contentsline {section}{\numberline {}13.6: Cylinders and Quadric Surfaces}{33}{section.6}%
+\contentsline {section}{\numberline {}14.1: Vector-Valued Functions}{41}{section.7}%
+\contentsline {section}{\numberline {}14.2: Calculus of Vector-Valued Functions}{46}{section.8}%
+\contentsline {section}{\numberline {}14.3: Motion in Space}{51}{section.9}%
+\contentsline {section}{\numberline {}14.4: Length of Curves}{56}{section.10}%
+\contentsline {section}{\numberline {}14.5: Curvature and Normal Vectors:}{60}{section.11}%
+\contentsline {section}{\numberline {}15.1: Graphs and Level Curves}{74}{section.12}%
+\contentsline {section}{\numberline {}15.2: Limits and Continuity}{82}{section.13}%
+\contentsline {section}{\numberline {}15.3: Partial Derivatives}{88}{section.14}%
+\contentsline {section}{\numberline {}15.4: The Chain Rule}{94}{section.15}%
+\contentsline {section}{\numberline {}15.5: Directional Derivatives and the Gradient}{100}{section.16}%
+\contentsline {section}{\numberline {}15.6: Tangent Planes and Linear Approximation}{109}{section.17}%
+\contentsline {section}{\numberline {}15.7: Maximum/Minimum Problems}{115}{section.18}%
+\contentsline {section}{\numberline {}15.8: Lagrange Multipliers}{124}{section.19}%
+\contentsline {section}{\numberline {}16.1: Double Integrals over Rectangular Regions}{131}{section.20}%
+\contentsline {section}{\numberline {}16.2: Double Integrals over General Regions}{136}{section.21}%
+\contentsline {section}{\numberline {}16.3: Double Integrals in Polar Coordinates}{143}{section.22}%
+\contentsline {section}{\numberline {}16.4: Triple Integrals}{152}{section.23}%
+\contentsline {section}{\numberline {}16.5: Triple Integrals in Cylindrical and Spherical Coordinates}{157}{section.24}%
+\contentsline {section}{\numberline {}16.6: Integrals for Mass Calculations}{165}{section.25}%
+\contentsline {section}{\numberline {}16.7: Change of Variables in Multiple Integrals}{171}{section.26}%
+\contentsline {section}{\numberline {}17.1: Vector Fields}{181}{section.27}%
+\contentsline {section}{\numberline {}17.2: Line Integrals}{186}{section.28}%
+\contentsline {section}{\numberline {}17.3: Conservative Vector Fields}{198}{section.29}%
+\contentsline {section}{\numberline {}17.4: Green's Theorem}{208}{section.30}%
+\contentsline {section}{\numberline {}17.5: Divergence and Curl}{221}{section.31}%
+\contentsline {section}{\numberline {}17.6: Surface Integrals}{231}{section.32}%
+\contentsline {section}{\numberline {}17.7: Stokes' Theorem}{246}{section.33}%
+\contentsline {section}{\numberline {}17.8: Divergence Theorem}{255}{section.34}%

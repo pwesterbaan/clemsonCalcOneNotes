@@ -153,13 +153,14 @@
 \noindent
 \begin{minipage}[t]{0.5\linewidth}\mbox{}%
 
-  \begin{tikzpicture}
+  \begin{tikzpicture}[declare function={
+      f(\x)=sin((\x) r)+cos((\x) r);}]
     \begin{axis}[
       axis lines=center,
       axis line style={->},
       xmin=-pi/4-0.5, xmax=7*pi/4+0.5,
       ymin=-1.75, ymax=1.75,
-      xtick={-0.785398163,2.35619449,5.497787144},
+      xtick={-pi/4,3*pi/4,7*pi/4},
       xticklabels={$-\frac{\pi}{4}$, $-\frac{3\pi}{4}$,$\frac{7\pi}{4}$},
       ytick={-1.414,1.414},
       yticklabels={$-\sqrt2$, $\sqrt2$},
@@ -169,13 +170,12 @@
       ylabel=$y$, ylabel style={at={(ticklabel* cs:1)},anchor=south west},
       every axis plot/.append style={line width=0.95pt, color=blue, samples=100}
       ]
-      \def\f(#1){sin(180*(#1)/pi)+cos(180*(#1)/pi)}
       
       \fill [blue!70, opacity=0.5, domain=-pi/4:3*pi/4, variable=\x]
-        (-pi/4, 0)-- plot ({\x}, {\f(\x)})-- (3*pi/4, 0)-- cycle;
+        (-pi/4, 0)-- plot ({\x}, {f(\x)})-- (3*pi/4, 0)-- cycle;
       \fill [red!70, opacity=0.5, domain=3*pi/4:7*pi/4, variable=\x]
-        (3*pi/4, 0)-- plot ({\x}, {\f(\x)})-- (7*pi/4, 0)-- cycle;
-      \addplot[-] expression[domain=-pi/4:7*pi/4]{\f(x)};
+        (3*pi/4, 0)-- plot ({\x}, {f(\x)})-- (7*pi/4, 0)-- cycle;
+      \addplot[-] expression[domain=-pi/4:7*pi/4]{f(x)};
       \end{axis}
   \end{tikzpicture}
 \end{minipage}%

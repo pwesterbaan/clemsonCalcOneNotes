@@ -76,7 +76,10 @@ Finding the area under the curve is simple in some cases:
 
   For functions whose curves are irregular shapes, we can approximate the area using rectangles:
   \begin{center}
-    \begin{tikzpicture}
+    \begin{tikzpicture}[declare function={
+        f(\x)=1-\x^2;
+        a=0; b=1; n=4;
+        del=(b-a)/n; LR(\l)=del*\l;}]
       \begin{groupplot}[
         group style={group size=3 by 1, horizontal sep=0.25in},
         axis lines=center,
@@ -88,34 +91,26 @@ Finding the area under the curve is simple in some cases:
         ticklabel style={font=\footnotesize,inner sep=0.5pt,fill=white,opacity=1.0, text opacity=1},
         every axis plot/.append style={line width=0.75pt, color=blue, samples=100}
         ]
-        \def\f(#1){1-(#1)^2};
-        \def\a{0} \def\b{1}
-        \def\n{4}            %% Number of rectangles
-        %
-        \FPsub\LEN\b\a       %% \LEN=\b-\a
-        \FPdiv\del\LEN\n     %% \del=\LEN/\n
         \nextgroupplot
-          \def\ALPHA{0.0}      %% left,center,right 0\leq \ALPHA\leq 1
-          \FPmul\LR\del\ALPHA  %% \LR=\del*\ALPHA
-          \pgfplotsinvokeforeach{\a,\a+\del,...,\b-\del}{
-            \draw[left color=ClemsonPurple!75, right color=ClemsonPurple!40, line width=0.0pt] (axis cs: #1, 0) rectangle (#1+\del, {\f(\LR+#1)});}
-          \addplot[name path=f, -] expression[domain=0:1]{\f(\x)};
-        %
+          \pgfplotsinvokeforeach{a,a+del,...,b-del}{
+            \draw[left color=ClemsonPurple!75, right
+              color=ClemsonPurple!40, line width=0.0pt]
+              (axis cs: #1, 0) rectangle (#1+del, {f(LR(0)+#1)});}
+          \addplot[name path=f, -] expression[domain=0:1]{f(\x)};
         %
         \nextgroupplot
-        \def\ALPHA{0.5}      %% left,center,right 0\leq \ALPHA\leq 1
-        \FPmul\LR\del\ALPHA  %% \LR=\del*\ALPHA
-          \pgfplotsinvokeforeach{\a,\a+\del,...,\b-\del}{
-            \draw[left color=ClemsonPurple!75, right color=ClemsonPurple!40, line width=0.0pt] (axis cs: #1, 0) rectangle (#1+\del, {\f(\LR+#1)});}
-          \addplot[name path=f, -] expression[domain=0:1]{\f(\x)};
-        %
+          \pgfplotsinvokeforeach{a,a+del,...,b-del}{
+            \draw[left color=ClemsonPurple!75, right
+              color=ClemsonPurple!40, line width=0.0pt]
+              (axis cs: #1,0) rectangle (#1+del, {f(LR(0.5)+#1)});} 
+          \addplot[name path=f, -] expression[domain=0:1]{f(\x)};
         %
         \nextgroupplot
-        \def\ALPHA{1.0}      %% left,center,right 0\leq \ALPHA\leq 1
-        \FPmul\LR\del\ALPHA  %% \LR=\del*\ALPHA
-          \pgfplotsinvokeforeach{\a,\a+\del,...,\b-\del}{
-            \draw[left color=ClemsonPurple!75, right color=ClemsonPurple!40, line width=0.0pt] (axis cs: #1, 0) rectangle (#1+\del, {\f(\LR+#1)});}
-          \addplot[name path=f, -] expression[domain=0:1]{\f(\x)};
+          \pgfplotsinvokeforeach{a,a+del,...,b-del}{
+            \draw[left color=ClemsonPurple!75, right
+              color=ClemsonPurple!40, line width=0.0pt]
+              (axis cs: #1,0) rectangle (#1+del, {f(LR(1)+#1)});}
+          \addplot[name path=f, -] expression[domain=0:1]{f(\x)};
       \end{groupplot}
     \end{tikzpicture}
 
@@ -129,7 +124,10 @@ Finding the area under the curve is simple in some cases:
   
   These approximations are much more accurate when more rectangles are used:
   \begin{center}
-    \begin{tikzpicture}
+    \begin{tikzpicture}[declare function={
+        f(\x)=1-\x^2;
+        a=0; b=1; 
+        del(\n)=(b-a)/\n; LR(\l,\n)=(b-a)*\l/\n;}]
       \begin{groupplot}[
         group style={group size=3 by 1, horizontal sep=0.25in},
         axis lines=center,
@@ -140,42 +138,29 @@ Finding the area under the curve is simple in some cases:
         ticklabel style={font=\footnotesize,inner sep=0.5pt,fill=white,opacity=1.0, text opacity=1},
         every axis plot/.append style={line width=0.75pt, color=blue, samples=100}
         ]
-        \def\f(#1){1-(#1)^2};
-        \def\a{0} \def\b{1}
         \nextgroupplot[xtick={0,0.25,...,1},minor x tick num=1]
-          \def\n{8}            %% Number of rectangles
-          %
-          \FPsub\LEN\b\a       %% \LEN=\b-\a
-          \FPdiv\del\LEN\n     %% \del=\LEN/\n
-          \def\ALPHA{0.0}      %% left,center,right 0\leq \ALPHA\leq 1
-          \FPmul\LR\del\ALPHA  %% \LR=\del*\ALPHA
-          \pgfplotsinvokeforeach{\a,\a+\del,...,\b-\del}{
-            \draw[left color=ClemsonPurple!75, right color=ClemsonPurple!40, line width=0.0pt] (axis cs: #1, 0) rectangle (#1+\del, {\f(\LR+#1)});}
-          \addplot[name path=f, -] expression[domain=0:1]{\f(\x)};
-        %
+          \pgfplotsinvokeforeach{a,a+del(8),...,b-del(8)}{
+            \draw[left color=ClemsonPurple!75, right
+              color=ClemsonPurple!40, line width=0.0pt]
+              (axis cs: #1,0) rectangle ({#1+del(8)},
+              {f(LR(0,8)+#1)});}
+          \addplot[name path=f, -] expression[domain=0:1]{f(\x)};
         %
         \nextgroupplot[xtick={0,0.25,...,1},minor x tick num=3]
-          \def\n{16}            %% Number of rectangles
-          %
-          \FPsub\LEN\b\a       %% \LEN=\b-\a
-          \FPdiv\del\LEN\n     %% \del=\LEN/\n
-          \def\ALPHA{0.0}      %% left,center,right 0\leq \ALPHA\leq 1
-          \FPmul\LR\del\ALPHA  %% \LR=\del*\ALPHA
-          \pgfplotsinvokeforeach{\a,\a+\del,...,\b-\del}{
-            \draw[left color=ClemsonPurple!75, right color=ClemsonPurple!40, line width=0.0pt] (axis cs: #1, 0) rectangle (#1+\del, {\f(\LR+#1)});}
-          \addplot[name path=f, -] expression[domain=0:1]{\f(\x)};
-        %
+          \pgfplotsinvokeforeach{a,a+del(16),...,b-del(16)}{
+            \draw[left color=ClemsonPurple!75, right
+              color=ClemsonPurple!40, line width=0.0pt]
+              (axis cs: #1,0) rectangle ({#1+del(16)},
+              {f(LR(0,16)+#1)});}
+          \addplot[name path=f, -] expression[domain=0:1]{f(\x)};
         %
         \nextgroupplot[xtick={0,0.25,...,1},minor x tick num=7]
-          \def\n{32}            %% Number of rectangles
-          %
-          \FPsub\LEN\b\a       %% \LEN=\b-\a
-          \FPdiv\del\LEN\n     %% \del=\LEN/\n
-          \def\ALPHA{0.0}      %% left,center,right 0\leq \ALPHA\leq 1
-          \FPmul\LR\del\ALPHA  %% \LR=\del*\ALPHA
-          \pgfplotsinvokeforeach{\a,\a+\del,...,\b-\del}{
-            \draw[left color=ClemsonPurple!60, right color=ClemsonPurple!40, line width=0.0025pt] (axis cs: #1, 0) rectangle (#1+\del, {\f(\LR+#1)});}
-          \addplot[name path=f, -] expression[domain=0:1]{\f(\x)};
+          \pgfplotsinvokeforeach{a,a+del(32),...,b-del(32)}{
+            \draw[left color=ClemsonPurple!75, right
+              color=ClemsonPurple!40, line width=0.0pt]
+              (axis cs: #1,0) rectangle ({#1+del(32)},
+              {f(LR(0,32)+#1)});}
+          \addplot[name path=f, -] expression[domain=0:1]{f(\x)};
       \end{groupplot}
     \end{tikzpicture}
   \end{center}
