@@ -11,19 +11,18 @@
   \begin{minipage}{0.5\linewidth}
     \subsection*{Graphically:}
     \begin{center}
-      \begin{tikzpicture}[scale=1.0]
+      \begin{tikzpicture}[scale=1.0, declare function={
+        f(\x)=exp(-cos((\x r)*pi)-exp(sin((\x r)))-exp(-1)+1)/2;}]
         \begin{axis}[
           axis lines=center,
           axis line style={->},
           xmin=-1.75, xmax=5,
           ymin=-0.25,  ymax=1.75,
           xtick={-3,-2,...,4},
-          %ytick={-1,-0.5,0.5,1,...,2.5},
           xlabel=$x$, xlabel style={at={(1,0.15)}, anchor=west},
           ylabel=$f(x)$, ylabel style={at={(0.25,1)}, anchor=south},
           ]
-        \def\f(#1){0.5*(exp(-cos((#1 r)*pi)-exp(sin((#1 r)))-exp(-1)+1)}
-        \addplot[samples=501,blue] {\f(\x)};
+        \addplot[samples=501,blue] {f(\x)};
         \end{axis}
       \end{tikzpicture}
     \end{center}
