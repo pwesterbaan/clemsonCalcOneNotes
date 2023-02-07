@@ -15,20 +15,20 @@
 \contentsline {section}{\numberline {}3.5: Derivatives of Trigonometric Functions}{107}{section.14}%
 \contentsline {section}{\numberline {}3.6: Rate of Change Applications}{116}{section.15}%
 \contentsline {section}{\numberline {}3.7: The Chain Rule}{124}{section.16}%
-\contentsline {section}{\numberline {}3.8: Implicit Differentiation}{127}{section.17}%
-\contentsline {section}{\numberline {}3.9: Derivatives of Logarithmic and Exponential Functions}{133}{section.18}%
-\contentsline {section}{\numberline {}3.10: Derivatives of Inverse Trigonometric Functions}{143}{section.19}%
-\contentsline {section}{\numberline {}3.11: Related Rates}{148}{section.20}%
-\contentsline {section}{\numberline {}4.1: Maxima and Minima}{169}{section.21}%
-\contentsline {section}{\numberline {}4.2: Mean Value Theorem}{183}{section.22}%
-\contentsline {section}{\numberline {}4.3: What Derivatives Tell Us}{189}{section.23}%
-\contentsline {section}{\numberline {}4.4: Graphing Functions}{203}{section.24}%
-\contentsline {section}{\numberline {}4.6: Linear Approximation and Differentials}{216}{section.25}%
-\contentsline {section}{\numberline {}4.7: L'H\^ opital's Rule}{231}{section.26}%
-\contentsline {section}{\numberline {}4.5: Optimization Problems}{245}{section.27}%
-\contentsline {section}{\numberline {}4.9: Antiderivatives}{262}{section.28}%
-\contentsline {section}{\numberline {}5.1: Approximating Areas under Curves}{280}{section.29}%
-\contentsline {section}{\numberline {}5.2: Definite Integrals}{296}{section.30}%
-\contentsline {section}{\numberline {}5.3: Fundamental Theorem of Calculus}{308}{section.31}%
-\contentsline {section}{\numberline {}5.4: Working with Integrals}{322}{section.32}%
-\contentsline {section}{\numberline {}5.5: Substitution Rule}{332}{section.33}%
+\contentsline {section}{\numberline {}3.8: Implicit Differentiation}{128}{section.17}%
+\contentsline {section}{\numberline {}3.9: Derivatives of Logarithmic and Exponential Functions}{134}{section.18}%
+\contentsline {section}{\numberline {}3.10: Derivatives of Inverse Trigonometric Functions}{144}{section.19}%
+\contentsline {section}{\numberline {}3.11: Related Rates}{149}{section.20}%
+\contentsline {section}{\numberline {}4.1: Maxima and Minima}{170}{section.21}%
+\contentsline {section}{\numberline {}4.2: Mean Value Theorem}{184}{section.22}%
+\contentsline {section}{\numberline {}4.3: What Derivatives Tell Us}{190}{section.23}%
+\contentsline {section}{\numberline {}4.4: Graphing Functions}{204}{section.24}%
+\contentsline {section}{\numberline {}4.6: Linear Approximation and Differentials}{217}{section.25}%
+\contentsline {section}{\numberline {}4.7: L'H\^ opital's Rule}{232}{section.26}%
+\contentsline {section}{\numberline {}4.5: Optimization Problems}{246}{section.27}%
+\contentsline {section}{\numberline {}4.9: Antiderivatives}{263}{section.28}%
+\contentsline {section}{\numberline {}5.1: Approximating Areas under Curves}{281}{section.29}%
+\contentsline {section}{\numberline {}5.2: Definite Integrals}{297}{section.30}%
+\contentsline {section}{\numberline {}5.3: Fundamental Theorem of Calculus}{309}{section.31}%
+\contentsline {section}{\numberline {}5.4: Working with Integrals}{323}{section.32}%
+\contentsline {section}{\numberline {}5.5: Substitution Rule}{333}{section.33}%
