@@ -26,7 +26,9 @@
 \RequirePackage[shortlabels, inline]{enumitem}  %customize enumerate at initialization
 \RequirePackage[makeroom]{cancel}               %cross out math
 \RequirePackage[normalem]{ulem}
-\RequirePackage{booktabs}
+\RequirePackage{tabularray}
+\UseTblrLibrary{booktabs}
+%\RequirePackage{booktabs}
 \RequirePackage{tasks}                          %horizontal lists
   \NewTasksEnvironment[label=~]{extasks}[\task] %blank labels for tasks
 \RequirePackage{blindtext}                      %lorem ipsum...
@@ -170,6 +172,7 @@
     draw=black]
 
 \RequirePackage{colorPalette}
+
 \input{texShortcutsWesterbaan}
 
 %% Custom title for solution box in exam package

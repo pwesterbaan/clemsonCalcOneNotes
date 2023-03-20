@@ -84,8 +84,10 @@
 \DeclareMathOperator{\Char}{char}
 \DeclareMathOperator{\col}{Col}
 \DeclareMathOperator{\cond}{Cond}
+\DeclareMathOperator{\cone}{Cone}
 \DeclareMathOperator{\conv}{conv}
-\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\Cor}{Cor}
+\DeclareMathOperator{\Corr}{Cor}
 \DeclareMathOperator{\Cov}{Cov}
 \DeclareMathOperator{\csch}{csch}
 \DeclareMathOperator{\diag}{diag}
@@ -111,13 +113,29 @@
 \DeclareMathOperator{\SST}{SST}
 \DeclareMathOperator{\tr}{tr}
 \DeclareMathOperator{\Var}{Var}
+
+%% Special Delimiters ---------------------------------------------
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiterX\norm[1]\lVert\rVert{
+  \ifblank{#1}{\:\cdot\:}{#1}
+}
+
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+%
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
 %% General Macros -------------------------------------------------
 \newcommand*{\A}{\mathcal{A}}
-\newcommand*{\abs}[1]{{\left\vert#1\right\vert}}
+%\newcommand*{\abs}[1]{{\left\vert#1\right\vert}}
 \newcommand*{\bbb}{\mathbb{B}}
 \newcommand*{\bbc}{\mathbb{C}}
 \newcommand*{\bbn}{\mathbb{N}}
 \newcommand*{\bbq}{\mathbb{Q}}
+\newcommand*{\bbp}{\mathbb{P}}
 \newcommand*{\bbr}{\mathbb{R}}
 \newcommand*{\bbz}{\mathbb{Z}}
 \newcommand*{\bfO}{\mathbf{0}}
@@ -141,6 +159,8 @@
 \newcommand*{\ceil}[1]{{\left\lceil #1 \right\rceil}}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 \newcommand*{\contradiction}[1][]{\overset{#1}{\Rightarrow\hspace{-2pt}\Leftarrow}}
+%% replace "to" with en-dash in cref{,,}
+\newcommand{\crefrangeconjunction}{--\,}
 \newcommand*{\ddt}[1][]{{\frac{d^{#1}}{dt^{#1}}}}
 \newcommand*{\ddx}[1][]{{\frac{d^{#1}}{dx^{#1}}}}
 \newcommand*{\ddy}[1][]{{\frac{d^{#1}}{dy^{#1}}}}
@@ -165,6 +185,10 @@
 \newcommand*{\tmpipo}[1][]{\ifthenelse{\isempty{#1}}{i+1}{i+#1}\egroup}
 \newcommand*{\inv}[1][1]{^{-#1}}
 \newcommand*{\ito}[1][1]{_{i=#1}}
+\newcommand*{\kmo}{\bgroup\tmpkmo}
+\newcommand*{\tmpkmo}[1][]{\ifthenelse{\isempty{#1}}{k-1}{k-#1}\egroup}
+\newcommand*{\kpo}{\bgroup\tmpkpo}
+\newcommand*{\tmpkpo}[1][]{\ifthenelse{\isempty{#1}}{k+1}{k+#1}\egroup}
 \newcommand*{\jto}[1][1]{_{j=#1}}
 \newcommand*{\kto}[1][1]{_{k=#1}}
 %% Multi-line entries within a table
@@ -188,7 +212,7 @@
 \newcommand*{\myVec}[1]{{\mathbf{#1}}}
 \newcommand*{\nindep}{\not\!\indep}
 \newcommand*{\ninfty}{{-\infty}}
-\newcommand*{\norm}[1][\,\cdot\,]{{\left\Vert#1\right\Vert}}
+%\newcommand*{\norm}[1][\,\cdot\,]{{\left\Vert#1\right\Vert}}
   %% n-1 and n+1 to be used in sub/superscripts w/ or w/o args
 \newcommand*{\nmo}{\bgroup\tmpnmo}
 \newcommand*{\tmpnmo}[1][]{\ifthenelse{\isempty{#1}}{n-1}{n-#1}\egroup}
@@ -207,7 +231,7 @@
 \newcommand*{\tcol}[2][red]{\textcolor{#1}{#2}}
 \newcommand*{\TikZ}{Ti\textit{k}Z\xspace}
 \newcommand*{\To}{\longrightarrow}
-\newcommand*{\transpose}{^T}
+\newcommand*{\transpose}{^\intercal}%{^T}%{\!\top\!}}
 \newcommand*{\vecArrow}[1]{\overrightharp{\ensuremath{#1}}}
 \newcommand*{\veca}{\myVec{a}}
 \newcommand*{\vecB}{\myVec{B}}
@@ -224,7 +248,7 @@
 \newcommand*{\wti}{\widetilde}
 \newcommand*{\wha}{\widehat}
 \newcommand*{\xto}[1][1]{_{x=#1}}
-\newcommand*{\XTX}{\bfX^{\!\top}\hspace*{-2pt}\bfX}
-\newcommand*{\XTy}{\bfX^{\!\top}\hspace*{-2pt}\bfy}
+\newcommand*{\XTX}{\bfX\transpose\bfX}
+\newcommand*{\XTy}{\bfX\transpose\bfy}
 \newcommand*{\yto}[1][1]{_{y=#1}}
-\newcommand*{\yTy}{\bfy^{\!\top}\hspace*{-2pt}\bfy}
+\newcommand*{\yTy}{\bfy\transpose\bfy}
